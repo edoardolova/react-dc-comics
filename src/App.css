@@ -42,3 +42,34 @@ header{
     }
   }
 }
+
+/* footer section  */
+footer{
+  background-image: url('/img/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  .container{
+  position: relative;
+
+  }
+
+  h3{
+    color: white;
+  }
+  a{
+    color: gray;
+    &:hover{
+      color: white;
+    }
+  }
+
+  .footerLogo{
+    position: absolute;
+    top: -20%;
+    right: -5%;
+    transform: rotate(-30deg);
+    height: 150%;
+    opacity: 0.5;
+  }
+}
