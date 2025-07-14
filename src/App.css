@@ -38,7 +38,7 @@ header{
 .exploreSection{
   background-color: var(--primary-color);
 
-  .navabarExplore{
+  .navbarExplore{
     a{
       color: white;
       font-size: 0.8rem;
