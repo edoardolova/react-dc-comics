@@ -1,3 +1,5 @@
+import NavbarExplore from "./NavbarExplore"
+
 export default function Main(){
     return(
         <>
@@ -6,7 +8,10 @@ export default function Main(){
                     <h2>Content goes here</h2>
                 </div>
             </div>
-        
+
+            <div className="exploreSection">
+                <NavbarExplore/>
+            </div>
         </>
     )
 }

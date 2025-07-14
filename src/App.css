@@ -1,3 +1,7 @@
+:root{
+  --primary-color: #0282f9;
+}
+
 /* header section  */
 header{
   .logo{
@@ -23,4 +27,18 @@ header{
   background-color: black;
   color: white;
   padding: 3rem 0;
+}
+
+/* explore section  */
+.exploreSection{
+  background-color: var(--primary-color);
+
+  .navabarExplore{
+    a{
+      color: white;
+    }
+    img{
+      height: 60px;
+    }
+  }
 }
