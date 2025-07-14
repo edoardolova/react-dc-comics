@@ -1,3 +1,4 @@
+/* header section  */
 header{
   .logo{
     height: 80px;
@@ -14,4 +15,12 @@ header{
       color: #0282f9;
     }
   }
+}
+
+
+/* main section */
+.contentDiv{
+  background-color: black;
+  color: white;
+  padding: 3rem 0;
 }
