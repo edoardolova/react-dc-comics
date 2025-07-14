@@ -2,8 +2,13 @@
   --primary-color: #0282f9;
 }
 
+body{
+  background-color: black;
+}
+
 /* header section  */
 header{
+  background-color: white;
   .logo{
     height: 80px;
     width: 80px;
@@ -36,6 +41,7 @@ header{
   .navabarExplore{
     a{
       color: white;
+      font-size: 0.8rem;
     }
     img{
       height: 60px;
@@ -45,12 +51,15 @@ header{
 
 /* footer section  */
 footer{
-  background-image: url('/img/footer-bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+  .footerLinks{
+    background-image: url('/img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+  }
   .container{
-  position: relative;
+    position: relative;
 
   }
 
@@ -72,4 +81,25 @@ footer{
     height: 150%;
     opacity: 0.5;
   }
+
 }
+.footerSocial{
+  background-color: #303030;
+
+
+  .social{
+    align-items: center;
+    h4{
+      color: var(--primary-color);
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    a{
+      margin-left: 0.5rem;
+    }
+    a:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+

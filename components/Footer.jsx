@@ -1,7 +1,8 @@
 export default function Footer(){
     return(
         <>
-            <footer className="p-5">
+            <footer>
+                <div className="footerLinks p-5">
                 <div className="container">
                     <div className="row w-50">
                         <div className="col">
@@ -51,6 +52,23 @@ export default function Footer(){
                         </div>
                     </div>
                     <img src="/img/dc-logo.png" alt="" className="footerLogo" />
+                </div>
+
+                </div>
+                <div className="footerSocial py-4">
+                    <div className="container">
+                        <div className="d-flex">
+                            <button type="button" class="btn btn-outline-primary text-white">SIGN-UP NOW!</button>
+                            <div className="d-flex social ms-auto">
+                                <h4 className="me-3">FOLLOW US</h4>
+                                <a href="#"><img src="/img/footer-facebook.png" alt="" /></a>
+                                <a href="#"><img src="/img/footer-twitter.png" alt="" /></a>
+                                <a href="#"><img src="/img/footer-youtube.png" alt="" /></a>
+                                <a href="#"><img src="/img/footer-pinterest.png" alt="" /></a>
+                                <a href="#"><img src="/img/footer-periscope.png" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </footer>
         </>
