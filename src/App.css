@@ -28,11 +28,46 @@ header{
 
 
 /* main section */
+
+/* jumbotron  */
 .jumbotron{
   img{
     max-height: 250px;
     width: 100%;
   }
+}
+
+.comicsSeries{
+  position: relative;
+
+  .comicsBadge{
+    color: white;
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+  }
+
+  .cardComics{
+    .cardImgWrapper {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+        .cardImg {
+          width: 100%;
+          height: 100%;
+        }
+    }
+
+    .comicTitle{
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 900;
+    }
+  }
+
 }
 
 /* explore section  */
