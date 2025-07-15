@@ -28,10 +28,11 @@ header{
 
 
 /* main section */
-.contentDiv{
-  background-color: black;
-  color: white;
-  padding: 3rem 0;
+.jumbotron{
+  img{
+    max-height: 250px;
+    width: 100%;
+  }
 }
 
 /* explore section  */
