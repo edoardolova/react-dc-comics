@@ -1,6 +1,49 @@
 import Logo from '../public/img/dc-logo.png';
 
 export default function Navbar(){
+    const navLinks =[
+        {
+            text: 'CHARACTER',
+            href: '#',
+            ariaCurrent: 'page'
+        },
+        {
+            text: 'COMICS',
+            href: '#',
+        },
+        {
+            text: 'MOVIES',
+            href: '#',
+        },
+        {
+            text: 'TV',
+            href: '#',
+        },
+        {
+            text: 'GAMES',
+            href: '#',
+        },
+        {
+            text: 'COLLECTIBLES',
+            href: '#',
+        },
+        {
+            text: 'VIDEOS',
+            href: '#',
+        },
+        {
+            text: 'FANS',
+            href: '#',
+        },
+        {
+            text: 'NEWS',
+            href: '#',
+        },
+        {
+            text: 'SHOP',
+            href: '#',
+        },
+    ]
     return(
         <>
             <nav className="navbar navbar-expand-lg py-3">
@@ -13,37 +56,13 @@ export default function Navbar(){
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav ms-auto">
-                            <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">CHARACTERS</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">COMICS</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">MOVIES</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">TV</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">GAMES</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">COLLECTIBLES</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">VIDEOS</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">FANS</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">NEWS</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">SHOP</a>
-                            </li>
-
+                            {navLinks.map((link, index) => (
+                                <li className="nav-item" key={index}>
+                                    <a className="nav-link" href={link.href} aria-current={link.ariaCurrent || undefined}>
+                                        {link.text}
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>

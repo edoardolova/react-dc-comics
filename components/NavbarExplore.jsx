@@ -31,8 +31,8 @@ export default function NavbarExplore() {
         <>
             <div className="container text-center navbarExplore py-5">
                 <div className="row">
-                    {navItems.map((item) => (
-                        <div className="col">
+                    {navItems.map((item, index) => (
+                        <div className="col" key={index}>
                             <img src={item.imgSrc} alt={item.text} className="me-3" />
                             <a href={item.link}>{item.text}</a>
                         </div>
@@ -42,3 +42,5 @@ export default function NavbarExplore() {
         </>
     );
 }
+
+
