@@ -2,11 +2,11 @@ import Banner from "./Banner"
 import ComicsSeries from "./ComicsSeries"
 import NavbarExplore from "./NavbarExplore"
 
-export default function Main(){
+export default function Main({comics}){
     return(
         <>
             <Banner/>
-            <ComicsSeries/>
+            <ComicsSeries comics={comics}/>
             <div className="exploreSection">
                 <NavbarExplore/>
             </div>

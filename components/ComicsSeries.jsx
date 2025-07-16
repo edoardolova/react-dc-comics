@@ -1,8 +1,7 @@
-import comics from "../data/comics"
 import CardComics from "./CardComics";
 
 
-export default function ComicsSeries(){
+export default function ComicsSeries({comics}){
     return(
         <>
             <section className="comicsSeries">
